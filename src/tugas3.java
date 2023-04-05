@@ -7,7 +7,7 @@ public class tugas3 {
         System.out.print("Masukkan jumlah mata kuliah yang diambil: ");
         int n = input.nextInt();
 
-        // Input nilai mata kuliah dan jumlah SKS
+        
         double totalNilai = 0;
         int totalSks = 0;
         for (int i = 1; i <= n; i++) {
@@ -19,12 +19,9 @@ public class tugas3 {
             totalNilai += nilai * sks;
             totalSks += sks;
         }
-
-        // Hitung IPS
         double ips = totalNilai / totalSks;
         System.out.println("Indeks Prestasi Semester (IPS) anda adalah " + ips);
 
-        // Tentukan SKS maksimal
         int sksMaksimal;
         if (ips >= 3.5) {
             sksMaksimal = 24;
